@@ -1,3 +1,31 @@
+/*
+ * Serializer.cs
+ * This is the Serializer class for the PHPSerializationLibrary
+ *  
+ * Copyright 2004 Conversive, Inc.
+ * 
+ * Modified for WP7-Silverlight by Gordon Breuer
+ *
+ */
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+
+
+namespace Conversive.PHPSerializationLibrary {
+/// <summary>
+/// Serializer Class.
+/// </summary>
+public class PhpSerializer {
+//types:
+// N = null
+// s = string
+// i = int
+// d = double
+// a = array (hashtable)
+
+
     private readonly NumberFormatInfo _nfi;
     public Encoding StringEncoding = new UTF8Encoding();
 
@@ -146,4 +174,9 @@
                 return &quot;&quot;;
         }
     }
+}
+
+    
+  
+
 }
